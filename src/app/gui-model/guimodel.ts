@@ -40,6 +40,14 @@ export class GuiModel {
                             "url": "/group",
                             "form": "GroupForm",
                             "width": 2
+                        },                       
+                        {
+                            "id": "activity",
+                            "type": "autocomplete",
+                            "name": "Activity",
+                            "url": "/activity",
+                            "form": "ActivityForm",
+                            "width": 2
                         },
                         {
                             "id": "location",
