@@ -6,7 +6,7 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "Gregory Hill, Tobias Fatzer, Michael Neukom Best Friend Tracker :D ",
+            "title": "Gregory Hill, Tobias Fatzer, Michael Neukom Best Friend Tracker :D",
             "formList": [
                 {
                     "id": "FriendForm",
@@ -28,11 +28,12 @@ export class GuiModel {
                             "required": true
                         },
                         {
-                            "id": "nickname", 
-                            "type": "text", 
-                            "name": "Nickname", 
-                            "width": 2, 
-                            "required": true},
+                            "id": "nickname",
+                            "type": "text",
+                            "name": "Nickname",
+                            "width": 2,
+                            "required": true
+                        },
                         {
                             "id": "group",
                             "type": "autocomplete",
@@ -40,7 +41,7 @@ export class GuiModel {
                             "url": "/group",
                             "form": "GroupForm",
                             "width": 2
-                        },                       
+                        },
                         {
                             "id": "activity",
                             "type": "autocomplete",
@@ -328,7 +329,7 @@ export class GuiModel {
                             "url": "/group",
                             "form": {"form": "GroupForm"}
                         },
-                        {"type": "backbutton",},
+                        {"type": "backbutton"},
                         {
                             "type": "newButton",
                             "name": "NewGroup",

@@ -66,19 +66,34 @@ export class TestData {
                     location: locations[3].key,
                     birthdate: birthdate5
                 }));
+                promises.push(personDatabase.create({
+                    firstName: "Marshy",
+                    familyName: "Marshmellow",
+                    nickname: "Marshy",
+                    location: locations[3].key,
+                    birthdate: birthdate5
+                }));
                 Promise.all(promises).then((friends) => {
-                        activityDatabase.create({name: "Kino",
+                        activityDatabase.create({
+                            name: "Kino",
                             friends: [friends[0].key, friends[1].key],
-                            location: locations[2].key, date: new Date()});
-                        activityDatabase.create({name: "Jogging",
+                            location: locations[2].key, date: new Date()
+                        });
+                        activityDatabase.create({
+                            name: "Jogging",
                             friends: [friends[0].key, friends[1].key],
-                            location: locations[0].key, date: new Date()});
-                        activityDatabase.create({name: "Essen",
+                            location: locations[0].key, date: new Date()
+                        });
+                        activityDatabase.create({
+                            name: "Essen",
                             friends: [friends[0].key, friends[1].key],
-                            location: locations[1].key, date: new Date()});
-                        activityDatabase.create({name: "Meeting",
+                            location: locations[1].key, date: new Date()
+                        });
+                        activityDatabase.create({
+                            name: "Meeting",
                             friends: [friends[0].key, friends[1].key, friends[2].key, friends[3].key, friends[4].key],
-                            location: locations[3].key, date: new Date()});
+                            location: locations[3].key, date: new Date()
+                        });
                     }
                 ).catch((err) => {
                         console.log(err);
